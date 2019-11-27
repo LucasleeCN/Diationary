@@ -1,0 +1,2 @@
+# Diationary
+An easy dictionary 
