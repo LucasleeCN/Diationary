@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <SearchView
+        android:id="@+id/search_word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="请输入要查询的词"
+       />
+
+    <TextView
+        android:id="@+id/search_words_key"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_word"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/search_words_posE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_words_key"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_words_voiceE"
+        android:text="英式发音"
+        android:layout_below="@id/search_words_posE"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_words_psE"
+        android:layout_below="@id/button_words_voiceE"
+        android:text="@string/psE"
+        />
+    <TextView
+        android:id="@+id/search_words_posA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_words_psE"
+      />
+
+    <Button
+        android:id="@+id/button_words_voiceA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_words_posA"
+
+        android:text="美式发音" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_words_psA"
+        android:text="@string/psA"
+        android:layout_below="@id/button_words_voiceA"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_add_words"
+        android:text="收藏"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/search_word"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="基本释义"
+        android:textSize="15dp"
+        android:layout_below="@id/search_words_psA"
+        android:id="@+id/text_acceptation"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_words_posAcceptation"
+        android:layout_below="@id/text_acceptation"/>
+</RelativeLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <SearchView
+        android:id="@+id/search_word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="请输入要查询的词"
+        android:layout_marginVertical="5dp"
+        android:layout_marginHorizontal="5dp"/>
+
+    <TextView
+        android:id="@+id/search_words_key"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_word"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginVertical="5dp"
+        android:layout_marginTop="5dp"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/search_words_posE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_words_key"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginVertical="5dp"
+        android:layout_marginTop="7dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_words_voiceE"
+        android:text="英式发音"
+        android:layout_below="@id/search_words_posE"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_add_words"
+        android:text="收藏"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginVertical="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/search_word"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_words_psE"
+        android:layout_below="@id/button_words_voiceE"
+        android:text="@string/psE"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginVertical="5dp"/>
+    <TextView
+        android:id="@+id/search_words_posA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_words_psE"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginVertical="5dp"
+        android:layout_marginTop="7dp" />
+
+    <Button
+        android:id="@+id/button_words_voiceA"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:layout_below="@id/search_words_posA"
+
+        android:text="美式发音" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_words_psA"
+        android:layout_marginHorizontal="5dp"
+        android:text="@string/psA"
+        android:layout_marginVertical="5dp"
+        android:layout_below="@id/button_words_voiceA"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="基本释义"
+        android:textSize="20dp"
+        android:layout_below="@id/search_words_psA"
+        android:id="@+id/text_acceptation"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_words_posAcceptation"
+        android:layout_below="@id/text_acceptation"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_sent"
+        android:text="例句:"
+        android:layout_below="@id/search_words_posAcceptation"
+        android:textSize="20dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/text_sent"
+        android:id="@+id/search_words_sent"
+        />
+
+
+</RelativeLayout>
